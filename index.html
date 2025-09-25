@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chelsea Jade Global Connect — Your Trusted Connection to China</title>
+  <meta name="description" content="Chelsea Jade Global Connect connects international companies with trusted Chinese suppliers: research, verification, supplier visits, negotiation, and order management.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <div class="logo">CJ</div>
+      <div class="brand-text">
+        <span class="brand-line-1">Chelsea Jade</span>
+        <span class="brand-line-2">Global Connect • 切尔西翡翠环球通</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#offices">Offices</a>
+      <a href="#contact" class="btn btn-navy">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div class="hero-copy">
+        <h1>Your Trusted Connection to China</h1>
+        <p>From company research and supplier sourcing to factory visits and complete order management — we make China business simple, safe, and effective.</p>
+        <div class="cta">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+      </div>
+      <figure class="hero-visual card">
+        <img src="assets/hero-collage.svg" alt="Research, visits, negotiation, logistics collage">
+        <figcaption>Research • Visits • Negotiation • Orders</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="cards-4">
+        <article class="card service">
+          <img src="assets/ic-search.svg" class="icon" alt="Search icon">
+          <h3>Basic Research & Verification</h3>
+          <p>Verify registration, licences and reputation of a specific Chinese company. Clear risk indicators and recommendations.</p>
+        </article>
+        <article class="card service">
+          <img src="assets/ic-factory.svg" class="icon" alt="Factory icon">
+          <h3>Supplier Finder</h3>
+          <p>Tailored sourcing in your industry with shortlists, comparison matrix, and sample coordination.</p>
+        </article>
+        <article class="card service">
+          <img src="assets/ic-trip.svg" class="icon" alt="Trip icon">
+          <h3>Business Trip Assistance</h3>
+          <p>Airport pickup (HK/SZ), driver & translator, scheduling and cultural guidance for productive visits.</p>
+        </article>
+        <article class="card service">
+          <img src="assets/ic-order.svg" class="icon" alt="Order icon">
+          <h3>Order Management</h3>
+          <p>We act as your intermediary: place orders, track production, coordinate QC and logistics, and keep you updated.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Offices -->
+  <section id="offices" class="offices">
+    <div class="map-full">
+      <img src="assets/map-navy-gold.svg" alt="World map (navy background, gold borders) with pins for London, Warsaw, Hong Kong and Shenzhen">
+    </div>
+    <div class="container offices-list">
+      <h2>Our Global Offices</h2>
+      <ul class="cities">
+        <li>London</li>
+        <li>Warsaw</li>
+        <li>Hong Kong</li>
+        <li>Shenzhen</li>
+      </ul>
+      <div class="center">
+        <a href="#contact" class="btn btn-primary smooth">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div>
+        <h2>Contact & Enquiry</h2>
+        <p class="sub">Our modern form guides you step by step.</p>
+
+        <form id="msform" class="msform" onsubmit="return false;">
+          <ul id="progressbar">
+            <li class="active">Intro</li>
+            <li>Details</li>
+            <li>Confirm</li>
+          </ul>
+
+          <fieldset class="active">
+            <label>Full name<input type="text" id="f_name" required></label>
+            <label>Company<input type="text" id="f_company"></label>
+            <label>Email<input type="email" id="f_email" required></label>
+            <button class="btn btn-primary next">Next</button>
+          </fieldset>
+
+          <fieldset>
+            <label>Industry<input type="text" id="f_industry" placeholder="e.g. Electronics, Textiles"></label>
+            <label>Service of interest
+              <select id="f_service">
+                <option>Basic Research</option>
+                <option>Supplier Finder</option>
+                <option>Business Trip Assistance</option>
+                <option>Order Management</option>
+              </select>
+            </label>
+            <label>Message<textarea id="f_message" placeholder="Add requirements or a company name to verify"></textarea></label>
+            <div class="form-nav">
+              <button class="btn prev">Back</button>
+              <button class="btn btn-primary next">Next</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <div id="review" class="review"></div>
+            <div class="form-nav">
+              <button class="btn prev">Back</button>
+              <button class="btn btn-navy" id="submitBtn">Send Enquiry</button>
+            </div>
+            <div id="result" class="result" aria-live="polite"></div>
+          </fieldset>
+        </form>
+      </div>
+
+      <aside class="card contact-aside">
+        <h4>Direct Contact</h4>
+        <p><strong>Email:</strong> info@cjglobalconnect.com</p>
+        <p><strong>Offices:</strong> London • Warsaw • Hong Kong • Shenzhen</p>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><strong>Chelsea Jade Global Connect</strong><br>切尔西翡翠环球通</div>
+    <div>© 2025 Chelsea Jade Global Connect</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
